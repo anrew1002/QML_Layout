@@ -4,8 +4,8 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls
 Window {
     id:win
-    width: 320
-    height: 480
+    minimumWidth:  320
+    minimumHeight:  480
     visible: true
     title: qsTr("Hello World")
     Item{
@@ -70,13 +70,13 @@ Window {
                             radius: 2
                         }
                         contentItem: Text {
-                                text: parent.text
-                                font: parent.font
-                                opacity: enabled ? 1.0 : 0.3
-                                color: parent.down ? "black" : "#FFFFFF"
-                                horizontalAlignment: Text.AlignHCenter
-                                verticalAlignment: Text.AlignVCenter
-                                elide: Text.ElideRight
+                            text: parent.text
+                            font: parent.font
+                            opacity: enabled ? 1.0 : 0.3
+                            color: parent.down ? "black" : "#FFFFFF"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            elide: Text.ElideRight
                         }
 
                     }
@@ -93,13 +93,13 @@ Window {
                             radius: 2
                         }
                         contentItem: Text {
-                                text: parent.text
-                                font: parent.font
-//                                opacity: enabled ? 1.0 : 0.3
-                                color: parent.down ? "black" : "#FFFFFF"
-                                horizontalAlignment: Text.AlignHCenter
-                                verticalAlignment: Text.AlignVCenter
-                                elide: Text.ElideRight
+                            text: parent.text
+                            font: parent.font
+                            //                                opacity: enabled ? 1.0 : 0.3
+                            color: parent.down ? "black" : "#FFFFFF"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            elide: Text.ElideRight
                         }
                     }
                 }
